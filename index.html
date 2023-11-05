@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <h1> OLMS</h1>
+            <div class="col-md-4">
+                <h2>Book List</h2>
+                <div id="bookList" class="list-group">
+                    <!-- Dynamic list of books will be populated here -->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Add New Book</h2>
+                <form id="addBookForm">
+                    <div class="mb-3">
+                        <input type="text" id="title" class="form-control" placeholder="Title" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="author" class="form-control" placeholder="Author" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Book</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h2>Search Books</h2>
+                <div class="input-group">
+                    <input type="text" id="searchQuery" class="form-control" placeholder="Search by title or author">
+                    <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+                </div>
+                <div id="searchResults" class="list-group mt-2">
+                    <!-- Search results will be displayed here -->
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
